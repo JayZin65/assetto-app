@@ -1,0 +1,98 @@
+/* RESET */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0a0a0a;
+  color: #fff;
+}
+
+/* TÍTULO */
+h1 {
+  text-align: center;
+  color: #ff2c2c;
+  text-shadow: 0 0 10px #ff2c2c;
+}
+
+/* INPUTS */
+input, select {
+  padding: 10px;
+  margin: 5px;
+  background: #111;
+  border: 1px solid #ff2c2c;
+  color: white;
+  border-radius: 5px;
+}
+
+/* BOTÕES */
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  background: transparent;
+  border: 1px solid #ff2c2c;
+  color: #ff2c2c;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff2c2c;
+  color: black;
+  box-shadow: 0 0 10px #ff2c2c;
+}
+
+/* MENU */
+.menu {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* SEÇÕES */
+.content {
+  display: none;
+  padding: 20px;
+}
+
+/* CARDS */
+.content div {
+  background: #111;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid #222;
+  transition: 0.3s;
+}
+
+.content div:hover {
+  transform: scale(1.02);
+  border-color: #ff2c2c;
+  box-shadow: 0 0 10px #ff2c2c;
+}
+
+/* LINKS */
+a.link {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin: 5px 0;
+}
+
+a.link:hover {
+  color: #ff2c2c;
+}
+
+/* CATEGORIAS */
+h3 {
+  cursor: pointer;
+  color: #ff2c2c;
+
+  @keyframes glow {
+  0% { box-shadow: 0 0 5px #ff2c2c; }
+  50% { box-shadow: 0 0 20px #ff2c2c; }
+  100% { box-shadow: 0 0 5px #ff2c2c; }
+}
+
+h1 {
+  animation: glow 2s infinite;
+}
+}

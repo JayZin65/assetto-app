@@ -1,0 +1,16 @@
+{
+  "name": "assetto-app",
+  "version": "1.0.0",
+  "description": "Projeto Assetto Corsa Links",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-session": "^1.17.3"
+  }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Assetto Corsa Links</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>📁 Links Assetto Corsa</h1>
+
+  <!-- 🔐 LOGIN -->
+  <h2>🔐 Login Admin</h2>
+
+  <input type="text" id="user" placeholder="Usuário">
+  <input type="password" id="pass" placeholder="Senha">
+
+  <button onclick="login()">Entrar</button>
+  <button onclick="logout()">Sair</button>
+
+  <hr>
+
+  <!-- FORM -->
+  <h2>➕ Adicionar Link</h2>
+
+  <input type="text" id="name" placeholder="Nome">
+  <input type="text" id="url" placeholder="Link">
+
+  <select id="type">
+    <option value="tracks">Pistas</option>
+    <option value="cars">Carros</option>
+    <option value="graphics">Gráficos</option>
+  </select>
+
+  <select id="category">
+    <option value="F1">F1</option>
+    <option value="GT3">GT3</option>
+  </select>
+
+  <button onclick="addLink()">Adicionar</button>
+
+  <hr>
+
+  <!-- NOVA CATEGORIA -->
+  <h3>➕ Nova Categoria</h3>
+  <input type="text" id="newCategory" placeholder="Ex: F2, LMP1">
+  <button onclick="addCategory()">Criar Categoria</button>
+
+  <hr>
+
+  <!-- MENU -->
+  <div class="menu">
+    <button onclick="showSection('tracks')">🏁 Pistas</button>
+    <button onclick="showSection('cars')">🚗 Carros</button>
+    <button onclick="showSection('graphics')">🎮 Gráficos</button>
+  </div>
+
+  <!-- SEÇÕES -->
+  <section id="tracks" class="content"></section>
+  <section id="cars" class="content"></section>
+  <section id="graphics" class="content"></section>
+
+  <div class="container">
+    
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
