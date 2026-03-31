@@ -88,7 +88,6 @@ app.post('/api/add', checkAdmin, (req, res) => {
       data.cars[category] = [];
     }
     data.cars[category].push({ name, url });
-
   } else {
     data[type].push({ name, url });
   }
@@ -130,7 +129,6 @@ app.post('/api/rename-category', checkAdmin, (req, res) => {
 
   if (data.cars[oldName]) {
     data.cars[newName] = data.cars[oldName];
-
     delete data.cars[oldName];
   }
 
@@ -154,6 +152,7 @@ app.post('/api/move-car', checkAdmin, (req, res) => {
   res.json({ success: true });
 });
 
+// deletar item (pistas e gráficos)
 app.post('/api/delete-item', checkAdmin, (req, res) => {
   const { type, index } = req.body;
 
@@ -170,7 +169,9 @@ app.post('/api/delete-item', checkAdmin, (req, res) => {
   res.json({ success: true });
 });
 
-// ================= SERVER =================
-app.listen(3000, () => {
-  console.log('Servidor rodando em http://localhost:3000');
+// ================= SERVER (IMPORTANTE) =================
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`Servidor rodando na porta ${PORT}`);
 });
